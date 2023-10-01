@@ -1,1 +1,20 @@
-<p>content works!</p>
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer [opened]="opened"] mode="side">
+      <mat-list>
+        <mat-list-item [routerLinkActive]="['active']"]>
+            <mat-icon color="primary" mat-list-icon></mat-icon>
+            <a>Cars</a>
+        </mat-list-item>
+      </mat-list>
+    </mat-drawer>
+  
+  
+  </mat-drawer-container>
+
+  <mat-drawer-content> 
+    <div class="content">
+        <router-outlet></router-outlet>
+    </div>
+  </mat-drawer-content>
+
+  
