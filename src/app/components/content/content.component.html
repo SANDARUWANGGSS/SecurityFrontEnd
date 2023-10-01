@@ -1,20 +1,43 @@
-<mat-drawer-container class="example-container" autosize>
-    <mat-drawer [opened]="opened"] mode="side">
+<mat-drawer-container >
+    <mat-drawer [opened]="opened" mode="side">
       <mat-list>
-        <mat-list-item [routerLinkActive]="['active']"]>
-            <mat-icon color="primary" mat-list-icon></mat-icon>
-            <a>Cars</a>
+        <mat-list-item [routerLinkActive]="['active']">
+            <mat-icon color="primary" mat-list-icon inline><span class="material-symbols-outlined">
+                directions_car
+                </span></mat-icon>
+            <a mat-line>Cars</a>
+        </mat-list-item>
+
+        <mat-list-item [routerLinkActive]="['active']">
+            <mat-icon color="primary" mat-list-icon inline><span class="material-symbols-outlined">
+                sell
+                </span></mat-icon>
+            <a mat-line>Fuel Type</a>
+        </mat-list-item>
+
+        <mat-list-item [routerLinkActive]="['active']">
+            <mat-icon color="primary" mat-list-icon inline><span class="material-symbols-outlined">
+                store
+                </span></mat-icon>
+            <a mat-line>Reservation</a>
+        </mat-list-item>
+
+        <mat-list-item [routerLinkActive]="['active']">
+            <mat-icon color="primary" mat-list-icon inline><span class="material-symbols-outlined">
+                spa
+                </span></mat-icon>
+            <a mat-line>Reports</a>
         </mat-list-item>
       </mat-list>
     </mat-drawer>
   
-  
+    <mat-drawer-content> 
+        <div class="content">
+            <router-outlet></router-outlet>
+        </div>
+      </mat-drawer-content>
   </mat-drawer-container>
 
-  <mat-drawer-content> 
-    <div class="content">
-        <router-outlet></router-outlet>
-    </div>
-  </mat-drawer-content>
+  
 
   
