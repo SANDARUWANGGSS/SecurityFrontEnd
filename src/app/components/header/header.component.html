@@ -1,8 +1,11 @@
 <mat-toolbar color="primary">
-     <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-      <mat-icon>menu</mat-icon>
-    </button>
-    
+    <mat-toolbar-row>
+        <mat-icon style="cursor: pointer;color: white;" (click)="toggleMenu()">menu</mat-icon>
+        <span class="example-spacer"></span>
+        <span>SRM</span>
+        <span class="example-spacer"></span>
+        <mat-icon style="cursor: pointer;color: red;">logout</mat-icon>
+    </mat-toolbar-row>
 </mat-toolbar>
 
-  
+    
