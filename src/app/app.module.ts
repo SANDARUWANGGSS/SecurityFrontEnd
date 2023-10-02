@@ -18,6 +18,7 @@ import { AdminComponent } from './components/admin/admin.component';
 import { HomeComponent } from './components/home/home.component';
 import { AuthComponent } from './auth/auth.component';
 import { ForbiddenComponent } from './components/forbidden/forbidden.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ForbiddenComponent } from './components/forbidden/forbidden.component';
     AdminComponent,
     HomeComponent,
     AuthComponent,
-    ForbiddenComponent
+    ForbiddenComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
