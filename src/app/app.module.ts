@@ -13,13 +13,21 @@ import { ContentComponent } from './components/content/content.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import { CarComponent } from './components/car/car.component';
+import { UserComponent } from './components/user/user.component';
+import { AdminComponent } from './components/admin/admin.component';
+import { HomeComponent } from './components/home/home.component';
+import { AuthComponent } from './auth/auth.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ContentComponent,
-    CarComponent
+    CarComponent,
+    UserComponent,
+    AdminComponent,
+    HomeComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
