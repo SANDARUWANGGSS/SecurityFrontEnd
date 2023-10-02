@@ -19,6 +19,7 @@ import { HomeComponent } from './components/home/home.component';
 import { AuthComponent } from './auth/auth.component';
 import { ForbiddenComponent } from './components/forbidden/forbidden.component';
 import { LoginComponent } from './components/login/login.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { LoginComponent } from './components/login/login.component';
     MatToolbarModule,
     MatIconModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

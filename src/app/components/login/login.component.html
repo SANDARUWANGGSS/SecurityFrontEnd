@@ -1,6 +1,6 @@
 <div class="container mt-5">
     <div class="card" style="padding: 20px;">
-        <form>
+        <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
             <input 
             type="text" 
             ngModel=""
@@ -12,6 +12,7 @@
 
             <input 
             type="text" 
+            ngModel=""
             name="userPassword" 
             id="userPassword" 
             placeholder="Enter Your User name" 
