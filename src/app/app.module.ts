@@ -17,6 +17,7 @@ import { UserComponent } from './components/user/user.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { HomeComponent } from './components/home/home.component';
 import { AuthComponent } from './auth/auth.component';
+import { ForbiddenComponent } from './components/forbidden/forbidden.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { AuthComponent } from './auth/auth.component';
     UserComponent,
     AdminComponent,
     HomeComponent,
-    AuthComponent
+    AuthComponent,
+    ForbiddenComponent
   ],
   imports: [
     BrowserModule,
