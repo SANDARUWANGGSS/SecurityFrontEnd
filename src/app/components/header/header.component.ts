@@ -14,7 +14,7 @@ export class HeaderComponent {
     private menuService: MenuService,
     private userAuthService: UserAuthService,
     private router:Router,
-    private userService:UserService
+    public userService:UserService
     ){}
   toggleMenu(){
     this.menuService.toggle();
